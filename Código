@@ -1,0 +1,17 @@
+app/
+ ├─ controllers/
+ │   ├─ AuthController.php   — login, cadastro, logout
+ │   └─ TaskController.php   — criar, listar, atualizar, excluir tarefas
+ ├─ models/
+ │   ├─ User.php             — consultas de usuário no banco
+ │   └─ Task.php             — consultas de tarefa no banco
+ ├─ views/
+ │   ├─ login.php            — tela de login
+ │   ├─ register.php         — tela de cadastro
+ │   ├─ dashboard.php        — lista de tarefas
+ │   └─ create_task.php      — formulário de nova tarefa
+ └─ core/
+     └─ Database.php         — singleton PDO (conexão MySQL)
+
+index.php                    — front controller / roteador
+README.md                    — documentação completa      
